@@ -32,24 +32,27 @@ int longestConsecutive(vector<int>& nums) {
     return length;
 }
 int main(){
-    int n=14;
-    int arr[n]={100, 102, 100, 101, 101, 4, 3, 2, 3, 2, 1, 1, 1, 2};
+    int n=4;
+    int arr[n]={1,0,1,2};
     sort(arr,arr+n);
     // [1, 1, 1, 2, 2, 2, 3, 3, 4, 100, 100, 101, 101, 102]
-    int cnt=1;
-    int num=arr[0];
-    int length=1;
-    for (int i = 1; i < n; i++)
-    {
-        if(arr[i]==num+1){
-            cnt++;
-            num=arr[i];
-        }
-        else{
-            length=max(length,cnt);
-            cnt=0;
-        }
+    int cnt=0;
+    int maxcnt=0;
+    // int length=1;
+    for (int i = 0; i < n-1; i++)
+    { 
+        
+        if(arr[i]+1 == arr[i+1]){
+                cout<<arr[i]<<",";
+                cnt++;
+                maxcnt = max(cnt,maxcnt);
+            }
+            else{
+                cnt=0;
+            }
+
     }
-    cout<<length<<endl;
+    cout<<endl;
+    cout<<maxcnt<<endl;
     return 0;
 }
