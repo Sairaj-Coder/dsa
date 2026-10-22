@@ -1,5 +1,69 @@
-// #include<bits/stdc++.h>
-// using namespace std;
+#include<bits/stdc++.h>
+using namespace std;
+//merge two array
+
+/*
+Input: nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3
+Output: [1,2,2,3,5,6]
+Explanation: The arrays we are merging are [1,2,3] and [2,5,6].
+The result of 
+the merge is [1,2,2,3,5,6] with the underlined elements coming from nums1.
+*/
+int main(){
+    /*
+     // vector<int>ans;
+        // int i=0;
+        // int j=0;
+        // int size=arr.size();
+        // while(i<m && j<n){
+        //     if(arr[i]<=arr2[j]){
+        //             ans.push_back(arr[i]);
+        //             i++; 
+        //         }
+            
+        //     else{
+        //             ans.push_back(arr2[j]);
+        //             j++;
+        //     }
+        // }
+        
+        // while(i < m){
+        //     ans.push_back(arr[i]);
+        //     i++;
+        // }
+        // while(j<n){
+        //    ans.push_back(arr2[j]);
+        //     j++;
+        // }
+        // 
+        // for(int i=0 ;i< ans.size();i++){
+        //     arr[i]=ans[i];
+        // }
+    */
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // void reversee(int arr[],int start,int end){
 //     while (start<end)
@@ -425,47 +489,47 @@ using namespace std;
 //     }
 //     return i;
 // }
-int main()
-{
-    // vector<int> nums = {0, 0, 1, 1, 1, 2, 2, 3, 3, 4};
-    // removeDuplicates(nums);
-    // int n = 5;
-    // int arr[n] = {1, 2, 3, 4, 5};
-    // int global1 = 0;
-    // for (int start = 0; start < n; start++)
-    // {
-    //     for (int end = n; end > start; end--)
-    //     {
-    //         int tempsum = 0;
-    //         for (int ele = start; ele <  end; ele++)
-    //         {
-    //            // cout << arr[ele];
-    //              tempsum += arr[ele];
-    //         }
-    //         global1 = max(tempsum,global1);
-    //       //  cout << " ";
-    //     }
-    //     cout << endl;
-    // }
-    // cout<<global1;
-    int n = 4;
-    int arr[n] = {6,3,1,4};
+// int main()
+// {
+//     // vector<int> nums = {0, 0, 1, 1, 1, 2, 2, 3, 3, 4};
+//     // removeDuplicates(nums);
+//     // int n = 5;
+//     // int arr[n] = {1, 2, 3, 4, 5};
+//     // int global1 = 0;
+//     // for (int start = 0; start < n; start++)
+//     // {
+//     //     for (int end = n; end > start; end--)
+//     //     {
+//     //         int tempsum = 0;
+//     //         for (int ele = start; ele <  end; ele++)
+//     //         {
+//     //            // cout << arr[ele];
+//     //              tempsum += arr[ele];
+//     //         }
+//     //         global1 = max(tempsum,global1);
+//     //       //  cout << " ";
+//     //     }
+//     //     cout << endl;
+//     // }
+//     // cout<<global1;
+//     int n = 4;
+//     int arr[n] = {6,3,1,4};
     
-    vector<int>arrlist;
-    map<int,int>mpp;
-    int sum=0;
-    for (int i = 0; i < n; i++)
-    {   
-        sum+=arr[i];
-        mpp[sum]=i;
+//     vector<int>arrlist;
+//     map<int,int>mpp;
+//     int sum=0;
+//     for (int i = 0; i < n; i++)
+//     {   
+//         sum+=arr[i];
+//         mpp[sum]=i;
 
-        arrlist.push_back(sum);    
-    }
-    for(auto it : arrlist){
-        cout<<it<<",";
-    }
-    for(auto it : mpp){
-        cout<<it.first<<"=="<<it.second<<",";
-    }
-    return 0;
-}
+//         arrlist.push_back(sum);    
+//     }
+//     for(auto it : arrlist){
+//         cout<<it<<",";
+//     }
+//     for(auto it : mpp){
+//         cout<<it.first<<"=="<<it.second<<",";
+//     }
+//     return 0;
+// }
